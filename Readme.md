@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Mishanya Soldatkin](https://up.htmlacademy.ru/htmlcss/30/user/111303).
-* Наставник: `Неизвестно`.
+* Наставник: `Ольга Тюлихова (https://htmlacademy.ru/profile/id523263)`.
 
 ---
 
