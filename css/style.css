@@ -1,0 +1,436 @@
+/* FONTS */
+
+@font-face  {
+
+  font-family: "Roboto";
+  src:
+    url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+@font-face  {
+
+  font-family: "Roboto";
+  src:
+    url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style:bold;
+
+}
+
+@font-face  {
+
+  font-family: "Roboto";
+  src:
+    url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* CUSTOM COLORS */
+
+:root{
+
+  --basic-text-black:#283136;
+  --basic-black:#000000;
+  --basic-light-black:#283136;
+  --basic-red:#FB565A;
+  --basic-grey:#EEEEEE;
+  --basic-green:#00CA74;
+  --basic-yellow:#EFC849;
+  --basic-shadow-grey:#E1E1E1;
+  --basic-white:#FFFFFF;
+
+}
+
+/* GLOBAL */
+
+.page__body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto" , "Arial";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color:var(--basic-text-black);
+
+  list-style-type: none;
+
+}
+
+a {
+
+  text-decoration: none;
+
+}
+
+img {
+
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+
+/* navigation */
+
+.main__navigation {
+
+  font-size: 16px;
+  line-height: 30px;
+  color:var(--basic-text-black);
+  background-color: transparent;
+
+
+}
+
+.site__navigation {
+
+  list-style-type: none;
+}
+
+.site__navigation a, .basket a{
+
+  color:var(--basic-black);
+
+}
+
+.site__navigation a:hover,
+.site__navigation a:focus,
+.basket a:hover,
+.basket a:focus {
+
+  background-color: var(--basic-grey);
+
+}
+/* slider */
+
+.slider {
+
+  font: inherit;
+
+}
+
+.slider__list {
+
+  list-style-type:none;
+  text-align: left;
+
+}
+
+.slider__item h2 {
+
+font-family: "Roboto";
+font-style: normal;
+font-weight: 500;
+font-size: 55px;
+line-height: 55px;
+
+}
+
+/* offers */
+
+
+.offers {
+
+  background-color:var(--basic-white);
+
+}
+
+
+.offers__list {
+
+  list-style: none;
+  text-align: left;
+}
+
+.offers__item h2  {
+
+  font-family:"Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color:var(--basic-black);
+  text-align: left;
+}
+
+/* company */
+
+.company h3{
+
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  color:var(--basic-text-black);
+}
+
+.company__title {
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color:var(--basic-black);
+
+}
+
+.company__list  {
+
+  list-style: none;
+}
+
+/* company statistic */
+
+.company__statistics h3 {
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.indication__list dt {
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 45px;
+line-height: 64px;
+color:var(--basic-black);
+
+}
+
+
+.clients__list  {
+
+  list-style-type: none;
+
+}
+
+/* buttons */
+
+.button {
+
+font-family: "Roboto";
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+
+height:50px;
+
+color:var(--basic-white);
+background-color: var(--basic-red);
+
+border:none;
+
+}
+
+.button__web  {
+
+  background-color:var(--basic-red) ;
+  height: 50px;
+
+}
+
+.button__presentation  {
+
+  background-color: var(--basic-yellow);
+
+}
+
+.button__applications {
+
+  background-color: var(--basic-green);
+
+}
+
+
+
+/* main footer */
+
+.contacts__title  {
+
+font-family: "Roboto";
+font-style:normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+
+}
+
+.contacts__phone, .contacts__adress  {
+
+  font-family:"Roboto";
+  font-weight:400;
+  font-style:normal;
+  color:#666666;
+  font-size:16px;
+  line-height: 18px;
+
+}
+
+.contacts__phone a  {
+
+  font-family: "Roboto";
+  font-weight:400;
+  font-style:normal;
+  color:#666666;
+  font-size:16px;
+  line-height: 18px;
+  text-decoration: none;
+
+}
+
+.socials__list  {
+
+  list-style: none;
+  background: var(--basic-shadow-grey);
+
+}
+
+.discount__title  {
+
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.discount__text  {
+
+  font-family: inherit;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color:#444444;
+}
+
+
+
+
+
+/* Catalog Styles */
+
+
+/* Catalog Form */
+
+.price__value   {
+
+  font-family:"Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color:var(--basic-text-black);
+
+}
+
+.features__title , .grid__title , .price__title {
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color:var(--basic-black);
+
+}
+
+.grid__text , .features__text   {
+
+  font-family:"Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color:var(--basic-light-black)
+}
+
+.sort__title  {
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color:var(--basic-black);
+}
+
+.sort__list  {
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color:var(--basic-black);
+  list-style-type: none;
+
+}
+
+.sort__item a  {
+
+  color:var(--basic-black);
+
+}
+
+
+.page__list  {
+
+  font-family:"Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  list-style-type: none;
+
+}
+
+.page__list a  {
+
+  color:var(--basic-black);
+
+}
+
+
+
+/* templates */
+
+.templates__list  {
+
+  list-style: none;
+}
+
+.templates__title  {
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color:var(--basic-black);
+}
+
+.templates__text  {
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color:#666666;
+}
