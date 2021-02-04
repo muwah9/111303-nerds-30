@@ -61,8 +61,8 @@
       <form action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="price">
           <legend class="price__title ">Стоимость:</legend>
-          <button class="button__price" aria-label="Минимально" style="left:0%"></button>
-          <button class="button__price" aria-label="Максимально" style="right: 64%;"></button>
+          <button class="button__price button__price--min" aria-label="Минимально" style="left:0%"></button>
+          <button class="button__price button__price--max" aria-label="Максимально" style="right: 64%;"></button>
 
           <label class="price__value">От
             <input type="text" name="min-price" value="0">
@@ -120,7 +120,7 @@
 
         </fieldset>
 
-        <button type="submit">Показать</button>
+        <button class="button button--catalog"type="submit">Показать</button>
 
       </form>
 
@@ -134,23 +134,23 @@
         <ul class="sort__list">
 
           <li class="sort__item">
-            <a href="blank.html">По цене</a>
+            <a class="sort__item--button" href="blank.html">По цене</a>
           </li>
 
           <li class="sort__item">
-            <a href="blank.html">По типу</a>
+            <a class="sort__item--button" href="blank.html">По типу</a>
 
           </li>
 
           <li class="sort__item">
-            <a  href="blank.html">По названию</a>
+            <a class="sort__item--button" href="blank.html">По названию</a>
           </li>
 
           <li class="sort__item">
-            <a href="blank.html">По возрастанию </a>
+            <a class="sort__item--button" href="blank.html">По возрастанию </a>
           </li>
           <li class="sort__item">
-            <a href="blank.html">По убыванию</a>
+            <a class="sort__item--button" href="blank.html">По убыванию</a>
           </li>
         </ul>
 
@@ -202,16 +202,16 @@
 
       <ul class="page__list">
         <li class="page__number">
-          <a href="blank.html">1</a>
+          <a class="button button--page" href="blank.html">1</a>
         </li>
         <li class="page__number">
-          <a href="blank.html">2</a>
+          <a class="button button--page" href="blank.html">2</a>
         </li>
         <li class="page__number">
-          <a href="blank.html">3</a>
+          <a class="button button--page"href=" blank.html">3</a>
         </li>
         <li class="page__number">
-          <a href="blank.html">следующая</a>
+          <a class="button button--page" href="blank.html">следующая</a>
         </li>
       </ul>
 
@@ -239,7 +239,7 @@
     </section>
 
     <section class="socials">
-          <!--Заливку иконок соц сетей поменял с белой на черную чтобы пока отличались визуально потом поменяю на оригинальную белую-->
+
       <ul class="socials__list">
         <li class="socials__item">
           <a class="socials__button" href="https://vk.com" aria-label="vk">
