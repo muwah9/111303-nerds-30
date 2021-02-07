@@ -17,25 +17,25 @@
 
 <body class="page__body">
 
-  <header class="main__header">
+  <header class="header">
     <!--Меню сайта , navigation-->
-    <nav class="main__navigation">
+    <nav class="navigation">
 
-      <a href="index.html">
-        <img src="img/nerds-logo-head.svg" width="150" height="65" alt="Логотип Дизайн Студии Нёрдс">
+      <a class="navigation__logo" href="">
+        <img src="img/nerds-logo-head.svg"  width="160" height="65" alt="логотип дизайн-студии Нёрдс">
       </a>
 
-      <ul class="site__navigation">
-        <li>
+      <ul class="navigation__list">
+        <li class="navigation__item">
           <a href="blank.html">Студия</a>
         </li>
-        <li>
+        <li class="navigation__item">
           <a href="blank.html">Клиенты</a>
         </li>
-        <li>
+        <li class="navigation__item">
           <a href="catalog.html">Магазин</a>
         </li>
-        <li>
+        <li class="navigation__item">
           <a href="blank.html">Контакты</a>
         </li>
       </ul>
@@ -52,7 +52,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="catalog">
     <!--Каталог+цены-->
     <h1>Магазин готовых шаблонов</h1>
 
@@ -61,8 +61,8 @@
       <form action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="price">
           <legend class="price__title ">Стоимость:</legend>
-          <button class="button__price button__price--min" aria-label="Минимально" style="left:0%"></button>
-          <button class="button__price button__price--max" aria-label="Максимально" style="right: 64%;"></button>
+          <button class="button-price button-price--min" aria-label="Минимально" style="left:0%"></button>
+          <button class="button-price button-price--max" aria-label="Максимально" style="right: 64%;"></button>
 
           <label class="price__value">От
             <input type="text" name="min-price" value="0">
@@ -128,7 +128,7 @@
 
     <section class="types">
 
-      <div class="types__sort">
+      <div class="sort">
 
         <h3 class="sort__title">Сортировать:</h3>
         <ul class="sort__list">
