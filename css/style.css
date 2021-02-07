@@ -421,6 +421,7 @@ img {
 .sort__item--button:focus  {
 
   opacity: 60%;
+  color:var(--basic-black);
 
 }
 
@@ -626,6 +627,13 @@ text-transform: uppercase;
 .templates__list  {
 
   list-style: none;
+
+}
+
+.templates__list:hover,
+.templates__list:focus  {
+
+  background: var(--basic-grey);
 
 }
 
