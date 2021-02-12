@@ -16,6 +16,8 @@
 
 <body class="page__body">
 
+<div class="wrapper">
+
   <header class="header">
     <!--Меню сайта , navigation-->
     <nav class="navigation">
@@ -37,6 +39,7 @@
         <li class="navigation__item">
           <a href="blank.html">Контакты</a>
         </li>
+
       </ul>
 
       <div class="basket">
@@ -59,35 +62,36 @@
 
       <ul class="slider__list">
 
-        <li class="slider__item">
+        <li class="slider__item slider__item--current">
           <h2>Долго, дорого,
              скрупулезно.</h2>
           <p>Математически выверенный дизайн
             для вашего сайта или мобильного приложения</p>
-          <a class="button button--item" href="blank.html">Узнай больше</a>
-          <img src="img/slider-first.png" width="760" height="431" alt="Слайд-1">
+          <a class="button button--item" href="blank.html"><span>Узнай больше</span></a>
+         <!--- <img src="img/slider-first.png" width="760" height="431" alt="Слайд-1">-->
         </li>
 
-
         <li class="slider__item">
-          <h2>Любим математику<br>как никто другой</h2>
-          <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-          <a class="button button--item" href="blank.html">Узнай больше</a>
-          <img src="img/slider-second.png" width="760" height="431" alt="Слайд-2">
+          <h2>Любим математику
+            как никто другой</h2>
+          <p>Никакого креатива, только математические формулы
+             для расчета идеальных пропорций.</p>
+          <a class="button button--item" href="blank.html"> <span>Узнай больше</span></a>
+         <!-- <img src="img/slider-second.png" width="760" height="431" alt="Слайд-2">-->
         </li>
 
         <li class="slider__item">
           <h2>Только ночь,только хардкор</h2>
           <p>Работать днем, как все? Мы против этого.
             Ближе к полуночи работа только начинается.</p>
-          <a class="button button--item" href="blank.html">Узнай больше</a>
-          <img src="img/slider-third.png" width="760" height="431" alt="Слайд-3">
+          <a class="button button--item" href="blank.html"><span>Узнай больше</span></a>
+          <!--<img src="img/slider-third.png" width="760" height="431" alt="Слайд-3"> -->
         </li>
 
       </ul>
 
       <div class="slider__navigation">
-        <button class="slider__button" type="button" aria-label="Слайд-1"></button>
+        <button class="slider__button slider__button--current" type="button" aria-label="Слайд-1"></button>
         <button class="slider__button" type="button" aria-label="Слайд-2"></button>
         <button class="slider__button" type="button" aria-label="Слайд-3"></button>
       </div>
@@ -102,22 +106,30 @@
         <li class="offers__item offers__item--websites">
           <img src="img/website.jpg" width="300" height="146" alt="картинка веб-сайты">
           <h2>ВЕБ-САЙТЫ</h2>
-          <p>Мир никогда не будет прежним,после того как увидит ваш сайт!</p>
-          <a class="button button--red"href="blank.html">Заказать</a>
+          <p>Мир никогда не будет прежним,
+            после того как увидит ваш сайт!</p>
+          <a class="button button--red" href="blank.html">
+            <span>Заказать</span>
+          </a>
         </li>
 
         <li class="offers__item offers__item--applications">
           <img src="img/applications.jpg" width="300" height="146" alt="картинка приложения">
           <h2>Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google play</p>
-          <a  class="button button--green" href="blank.html">Заказать</a>
+          <a  class="button button--green" href="blank.html"><span>
+            Заказать</span>
+          </a>
         </li>
 
         <li class="offers__item offers__item--presentations">
           <img src="img/presentations.jpg" width="300" height="146" alt="картинка презентации">
           <h2>Презентации</h2>
-          <p>Вы даже не подозреваете,насколько вы изумительны!</p>
-          <a class="button button--yellow" href="blank.html">Заказать</a>
+          <p>Вы даже не подозреваете,
+            насколько вы изумительны!</p>
+          <a class="button button--yellow" href="blank.html">
+            <span>Заказать</span>
+          </a>
         </li>
 
       </ul>
@@ -125,38 +137,53 @@
     </section>
 
     <!--Раздел о Компании-->
-    <section class="company">
-      <p class="company__title">Мы - маленькая,но гордая дизайн-студия из Краснодара.</p>
 
-      <p class="company__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-        превыше креатива. Работаем не покладая рук,как роботы</p>
+    <div class="about-company">
 
-      <h3>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
+      <section class="company">
+        <p class="company__title">Мы - маленькая,но гордая дизайн-студия из Краснодара.</p>
 
-      <ul class="company__list">
-        <li class="company__item">Веб-сайтов любой сложности</li>
-        <li class="company__item">Мобильный приложений для IOS и Android</li>
-        <li class="company__item">Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
+        <p class="company__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук,как роботы</p>
 
-    </section>
+        <h3>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
 
-    <!--Статистика компании-->
-    <section class="statistics">
-      <img src="img/nerds-logo-stats.png" width="360" height="208" alt="логотип дизайн-студии Нёрдс">
+        <ul class="company__list">
+          <li class="company__item">Веб-сайтов любой сложности</li>
+          <li class="company__item">Мобильный приложений для IOS и Android</li>
+          <li class="company__item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
 
-      <h3>с 2004 года любим точность во всём:</h3>
+      </section>
 
-      <dl class="indication">
-        <dt class="indication__term">146<sup>%</sup></dt>
-        <dd class="indication__text">Уровень самоотдачи</dd>
-        <dt class="indication__term">100<sup>%</sup></dt>
-        <dd class="indication__text">Соблюдение сроков</dd>
-        <dt class="indication__term">50 <sup>%</sup></dt>
-        <dd class="indication__text">Минимальная предоплата</dd>
-      </dl>
+      <!--Статистика компании-->
+      <section class="statistics">
+        <img src="img/nerds-logo-stats.png" width="360" height="208" alt="логотип дизайн-студии Нёрдс">
 
-    </section>
+        <h3>с 2004 года любим точность во всём:</h3>
+
+        <ul class="indication">
+
+          <li>
+            <p class="indication__term">146<sup>%</sup></p>
+            <p class="indication__text">Уровень самоотдачи</p>
+          </li>
+
+          <li>
+            <p class="indication__term">100<sup>%</sup></p>
+            <p class="indication__text">Соблюдение сроков</p>
+          </li>
+
+          <li>
+            <p class="indication__term">50 <sup>%</sup></p>
+            <p class="indication__text">Минимальная предоплата</p>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </div>
 
     <!--Клиенты студии Нёрдс?-->
     <section class="clients">
@@ -168,7 +195,7 @@
           </a>
         </li>
         <li class="clients__item">
-          <a class="clients__link href="blank.html">
+          <a class="clients__link" href="blank.html">
             <img src="img/barbershop-logo.png" width="209" height="90" alt="логотип барбершоп Бородинский">
           </a>
         </li>
@@ -182,30 +209,38 @@
             <img src="img/mishka-logo.png" width="173" height="84" alt="логотип Mishka">
           </a>
         </li>
+
       </ul>
 
     </section>
 
   </main>
+</div>
 
   <footer class="footer">
 
     <!--Как нас найти?-->
-    <section class="footer__map">
-      <img src="img/map.jpg" width="1440" height="416"
-        alt="Офис по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-    </section>
+    <div class="map-contacts">
 
-    <section clas="contacts">
+      <section class="footer__map">
+        <img src="img/map.jpg" width="1440" height="416"
+          alt="Офис по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </section>
 
-      <p class="contacts__title">NERDS DESIGN STUDIO</p>
-      <p class="contacts__adress">191186, Санкт-Петербург ул.Б. Конюшенная д.19/8</p>
-      <p class="contacts__phone">тел &nbsp;
-        <a  href="tel:+78122757575">+7 (812) 275-75-75</a>
-      </p>
-      <button class="button button--contacts" type="button">Напишите нам</button>
+      <section class="contacts wrapper">
 
-    </section>
+        <p class="contacts__title">NERDS DESIGN STUDIO</p>
+        <p class="contacts__adress">191186, Санкт-Петербург ул.Б. Конюшенная д.19/8</p>
+        <p class="contacts__phone">тел &nbsp;
+          <a  href="tel:+78122757575">+7 (812) 275-75-75</a>
+        </p>
+        <button class="button button--contacts" type="button">Напишите нам</button>
+
+      </section>
+
+    </div>
+
+  <div class="socials-discount wrapper">
 
     <section class="socials">
 
@@ -241,7 +276,10 @@
     <div class="discount">
       <p class="discount__title">Давайже дружить, это выгодно!</p>
       <p class="discount__text">Скидка 10% для друзей из социальных сетей</p>
+
     </div>
+
+  </div>
 
   </footer>
 </body>
