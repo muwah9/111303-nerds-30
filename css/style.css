@@ -239,8 +239,8 @@ img {
 
   margin: 0;
   padding: 0;
+  min-height: 431px;
   list-style-type: none;
-  white-space: pre-line;
   text-align: left;
   background-image: url(../img/slider-first.png);
   background-position: right top;
@@ -253,6 +253,8 @@ img {
 
   margin: 0;
   padding: 0;
+  padding-top:78px;
+  margin-bottom:25px;
   font-style: normal;
   font-weight: 500;
   white-space: pre-line;
@@ -267,7 +269,7 @@ img {
   margin: 0;
   padding: 0;
   white-space: pre-line;
-  margin-bottom: 32px;
+  margin-bottom: 38px;
 }
 
 
@@ -283,6 +285,13 @@ img {
 
 }
 
+.slider__navigation {
+
+  position: absolute;
+  top:60%;
+  left:50%;
+
+}
 .slider__button {
 
   border-radius: 50%;
@@ -304,9 +313,10 @@ img {
 
 
 .offers {
+
   display: grid;
   padding: 0;
-  margin-bottom: 80px;
+  margin: 80px 0;
 
   background-color: var(--basic-white);
 
