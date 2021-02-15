@@ -21,7 +21,7 @@
       <!--Меню сайта , navigation-->
       <nav class="navigation">
 
-        <a class="navigation__logo" href="">
+        <a class="navigation__logo" href="index.html">
           <img src="img/nerds-logo-head.svg" width="160" height="65" alt="логотип дизайн-студии Нёрдс">
         </a>
 
@@ -42,16 +42,18 @@
         </ul>
 
         <div class="basket">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
-              fill="#A6A6A6" />
-            <path
-              d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
-              fill="#A6A6A6" />
-            <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#A6A6A6" />
-          </svg>
-          <a href="blank.html">Корзина</a>
+          <a href="blank.html">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                fill="#A6A6A6" />
+              <path
+                d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                fill="#A6A6A6" />
+              <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#A6A6A6" />
+            </svg>
+            <span>Корзина</span>
+          </a>
         </div>
 
       </nav>
@@ -69,16 +71,24 @@
           <fieldset class="price">
             <legend class="price__title ">Стоимость:</legend>
 
-                  <button class="button-price button-price--min" aria-label="Минимально" style="left:0%"></button>
-                  <button class="button-price button-price--max" aria-label="Максимально" style="right: 64%;"></button>
+            <div class="price__filter">
+              <div class="price__controls">
+                <div class="price__scale">
+                  <div class="price__bar">
+                  </div>
+                </div>
+                <button class="button-price button-price--min" type="button" aria-label="Минимально"></button>
+                <button class="button-price button-price--max" type="button" aria-label="Максимально"></button>
+              </div>
 
-                  <label class="price__value">От
-                    <input type="text" name="min-price" value="0">
-                  </label>
+              <label class="price__value">От
+                <input type="number" name="min-price" value="0">
+              </label>
 
-                  <label class="price__value">До
-                    <input type="text" name="max-price" value="15000">
-                  </label>
+              <label class="price__value">До
+                <input type="number" name="max-price" value="15000">
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="grid">
@@ -128,7 +138,9 @@
 
           </fieldset>
 
-          <button class="button button--catalog" type="submit">Показать</button>
+          <button class="button button--catalog" type="submit">
+            <span>Показать</span>
+          </button>
 
         </form>
 
@@ -142,7 +154,7 @@
           <ul class="sort__list">
 
             <li class="sort__item">
-              <a class="sort__item--button" href="blank.html">По цене</a>
+              <a class="sort__item--button sort__item--current" href="blank.html">По цене</a>
             </li>
 
             <li class="sort__item">
@@ -155,13 +167,14 @@
             </li>
 
             <li class="sort__item">
-              <a class="sort__item--button" href="blank.html">
-                <img src="img/icon-up-price.png" alt="По возрастанию стрелочка">
+              <a class="sort__item--button sort__item--current" href="blank.html">
+                <img src="img/icon-down-price.png" alt="По убыванию">
               </a>
             </li>
+
             <li class="sort__item">
-              <a class="sort__item--button" href="blank.html">
-                <img src="img/icon-down-price.png" alt="По убыванию стрелочка">
+              <a class="sort__item--button " href="blank.html">
+                <img src="img/icon-up-price.png" alt="По возрастанию">
               </a>
             </li>
 
@@ -176,63 +189,111 @@
 
         <!--Список доступных шаблонов-->
         <ul class="templates__list">
-          <li class="templates__item">
+          <li class="templates__item templates__item--current">
+            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
+              <path fill="#4D4D4D"
+                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+            </svg>
             <img src="img/catalog/sedona-site.jpg" width="358" height="578" alt="sedona">
-            <a class="templates__title" href="blank.html">SEDONA</a>
-            <p class="templates__text">Информационный сайт для&nbsp; туристов</p>
-            <a class="button button--templates" href="blank.html">9900 руб.</a>
+
+            <div class="templates__card templates__card--current visually-hidden">
+              <a class="templates__title" href="blank.html">SEDONA</a>
+              <p class="templates__text">Информационный сайт для&nbsp; туристов</p>
+              <a class="button button--templates" href="blank.html">9900 руб.</a>
+            </div>
+
           </li>
           <li class="templates__item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
+              <path fill="#4D4D4D"
+                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+            </svg>
             <img src="img/catalog/pink-site.jpg" width="358" height="578" alt="Pink">
-            <a class="templates__title" href="blank.html">PINK APP</a>
-            <p class="templates__text">Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="button button--templates" href="blank.html">9900 руб.</a>
+
+            <div class="templates__card visually-hidden">
+              <a class="templates__title" href="blank.html">PINK APP</a>
+              <p class="templates__text">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="button button--templates" href="blank.html">9900 руб.</a>
+            </div>
+
           </li>
-          <li class="templates__item">
+          <li class="templates__item ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
+              <path fill="#4D4D4D"
+                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+            </svg>
             <img src="img/catalog/barbershop-site.jpg" width="358" height="578" alt="barbershop">
-            <a class="templates__title" href="blank.html">BARBERSHOP</a>
-            <p class="templates__text">Сайт салона красоты. Для&nbsp;мужчин, да.</p>
-            <a class="button button--templates" href="blank.html">9900 руб.</a>
+
+            <div class="templates__card visually-hidden">
+              <a class="templates__title" href="blank.html">BARBERSHOP</a>
+              <p class="templates__text">Сайт салона красоты. Для&nbsp;мужчин, да.</p>
+              <a class="button button--templates" href="blank.html">9900 руб.</a>
+            </div>
+
           </li>
           <li class="templates__item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
+              <path fill="#4D4D4D"
+                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+            </svg>
             <img src="img/catalog/mishka-site.jpg" width="358" height="578" alt="mishka">
-            <a class="templates__title" href="blank.html">MISHKA</a>
-            <p class="templates__text">Интернет-магазин вязаных&nbsp;игрушек</p>
-            <a class="button button--templates" href="blank.html">9900 руб.</a>
+
+            <div class="templates__card visually-hidden">
+              <a class="templates__title" href="blank.html">MISHKA</a>
+              <p class="templates__text">Интернет-магазин вязаных&nbsp;игрушек</p>
+              <a class="button button--templates" href="blank.html">9900 руб.</a>
+            </div>
+
           </li>
           <li class="templates__item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
+              <path fill="#4D4D4D"
+                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+            </svg>
             <img src="img/catalog/aplus-site.jpg" width="358" height="578" alt="A plus">
-            <a class="templates__title" href="blank.html">A PLUS</a>
-            <p class="templates__text">Лендинг курсов повышения квалификации</p>
-            <a class="button button--templates" href="blank.html">9900 руб.</a>
+
+            <div class="templates__card visually-hidden">
+              <a class="templates__title" href="blank.html">A PLUS</a>
+              <p class="templates__text">Лендинг курсов повышения квалификации</p>
+              <a class="button button--templates" href="blank.html">9900 руб.</a>
+            </div>
+
           </li>
           <li class="templates__item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
+              <path fill="#4D4D4D"
+                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+            </svg>
             <img src="img/catalog/kvast-site.jpg" width="358" height="578" alt="кваст">
-            <a class="templates__title" href="blank.html">КВАСТ</a>
-            <p class="templates__text">Промо-сайт производителя крафтового кваса</p>
-            <a class="button button--templates" href="blank.html">9900 руб.</a>
+
+            <div class="templates__card visually-hidden">
+              <a class="templates__title" href="blank.html">КВАСТ</a>
+              <p class="templates__text">Промо-сайт производителя крафтового кваса</p>
+              <a class="button button--templates" href="blank.html">9900 руб.</a>
+            </div>
+
           </li>
 
         </ul>
 
-        <ul class="page__list">
-          <li class="page__number">
-            <a class="button button--page" href="blank.html">
+        <ul class="pages">
+          <li class="pages__number">
+            <a class="button button--pages current" href="#">
               <span>1</span>
             </a>
           </li>
-          <li class="page__number">
-            <a class="button button--page" href="blank.html">
+          <li class="pages__number">
+            <a class="button button--pages" href="blank.html">
               <span>2</span>
             </a>
           </li>
-          <li class="page__number">
-            <a class="button button--page" href=" blank.html">
+          <li class="pages__number">
+            <a class="button button--pages" href=" blank.html">
               <span>3</span>
             </a>
           </li>
-          <li class="page__number">
-            <a class="button button--page" href="blank.html">
+          <li class="pages__number">
+            <a class="button button--pages" href="blank.html">
               <span>Cледующая</span>
             </a>
         </ul>
@@ -259,9 +320,10 @@
         <p class="contacts__phone">тел &nbsp;
           <a href="tel:+78122757575">+7 (812) 275-75-75</a>
         </p>
-        <button class="button button__contacts" type="button">Напишите нам</button>
-
+        <button class="button button--contacts" type="button">Напишите нам</button>
       </section>
+
+      <img class="contacts__marker" src="./img/marker-on-map.png" alt="маркер на карте">
 
     </div>
 
