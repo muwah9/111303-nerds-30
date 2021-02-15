@@ -164,11 +164,13 @@ img {
   margin-top: 75px;
   line-height: 30px;
   font-weight: 500;
-  color: var(--basic-text-black);
+  color: var(--basic-black);
   background-color: transparent;
   text-transform: uppercase;
 
 }
+
+
 
 .navigation__list {
 
@@ -184,11 +186,20 @@ img {
 
 .navigation__item {
 
+  position:relative;
   text-align: center;
   padding-left: 45px;
 
 }
 
+
+
+.navigation__item--current::after {
+
+  content: "";
+  position: absolute;
+  width:
+}
 .navigation__list a,
 .basket a {
 
@@ -199,25 +210,44 @@ img {
 
 .basket {
 
+  position:relative;
   text-align-last: justify;
-  width: 100px;
+  width: 115px;
 
 }
 
 .navigation__list a:hover,
 .navigation__list a:focus,
-.basket a:hover,
-.basket a:focus {
+.basket:hover span,
+.basket:focus span{
 
   color: var(--basic-red);
 
 }
 
 .navigation__list a:active,
-.basket a:active {
+.basket:active span {
 
   color: var(--basic-black);
   opacity: 30%;
+
+}
+
+.basket:active > svg {
+
+  opacity:none;
+
+}
+
+.basket:active::after {
+
+  content: "";
+  position:absolute;
+  top:100%;
+  right:5%;
+  width:112px;
+  height:2px;
+  background-color: var(--basic-red);
 
 }
 
@@ -362,16 +392,37 @@ img {
 /* company */
 
 
+.about-company {
+
+  display: grid;
+  padding: 0;
+  margin-bottom:75px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+}
+
+.about-company::after {
+
+  content:"";
+  position: absolute;
+  width:1160px;
+  height:2px;
+  background-color: var(--basic-grey);
+  margin-bottom:30px;
+
+}
 
 .company {
 
   width: 651px;
+  margin-top:73px;
 
 }
 
 .company h3 {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -382,14 +433,15 @@ img {
 
 .company__title {
 
+  width: 651px;
+  margin:0;
+  margin-bottom: 32px;
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: var(--basic-black);
-  width: 651px;
-  margin-bottom: 30px;
 
 }
 
@@ -408,8 +460,8 @@ img {
 
 .company__list li:nth-child(2) {
 
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
 }
 
@@ -427,20 +479,12 @@ img {
 
 /* company statistic */
 
-.about-company {
-
-  display: grid;
-  padding: 0;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-
-}
-
 
 .statistics {
 
   width: 360px;
   margin: 0;
+  margin-top:39px;
   padding: 0;
   justify-self: self-end;
 
@@ -506,15 +550,35 @@ img {
 
 }
 
+
 .clients {
 
-  margin-top: 30px;
-  margin-bottom: 30px;
-  background-image: url(../img/line.png), url(../img/line.png);
-  background-position: top, bottom;
-  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  height: 180px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 80px;
 
 }
+
+.clients::before,
+.clients::after {
+
+  content: "";
+  position: absolute;
+  width:1160px;
+  height:2px;
+  background-color: var(--basic-grey);
+
+}
+
+.clients::after {
+
+  top:100%
+
+}
+
 
 .clients__list {
 
@@ -536,6 +600,25 @@ img {
 
 }
 
+.clients__item::after {
+
+  content: "";
+  position: absolute;
+  margin: 0;
+  width: 58px;
+  height: 2px;
+  top:50%;
+  opacity: 1;
+  background-color: var(--basic-grey);
+  transform: rotate(90deg);
+
+}
+
+.clients__item:last-child::after {
+
+  display:none;
+
+}
 
 .clients__item:hover,
 .clients__item:focus {
@@ -803,7 +886,7 @@ img {
 
   position: absolute;
   text-align: center;
-  left: 5%;
+  left:5%;
   top: 15%;
   width: 310px;
   height: 310px;
@@ -841,7 +924,7 @@ img {
 .contacts__marker {
 
   position: absolute;
-  left: 56%;
+  left: 57%;
   bottom: 35%;
 
 }
@@ -1249,7 +1332,8 @@ img {
 
   position: relative;
   width: 358px;
-  height: 578px;
+  height: 580px;
+  object-fit: contain;
 
 }
 
@@ -1313,6 +1397,15 @@ img {
 
 }
 
+.templates__item:focus,
+.templates__item:hover {
+
+  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  border-radius: 5px;
+  outline:none;
+
+}
+
 .templates__item:hover > svg,
 .templates__item:focus > svg {
 
@@ -1321,7 +1414,7 @@ img {
 }
 
 .templates__item:hover > .templates__card,
-.templates__card:focus > .templates__card {
+.templates__item:focus > .templates__card {
 
   opacity:1;
 
