@@ -21,7 +21,7 @@
       <!--Меню сайта , navigation-->
       <nav class="navigation">
 
-        <a class="navigation__logo" href="index.html">
+        <a class="navigation__logo" href="">
           <img src="img/nerds-logo-head.svg" width="160" height="65" alt="логотип дизайн-студии Нёрдс">
         </a>
 
@@ -32,7 +32,7 @@
           <li class="navigation__item">
             <a href="blank.html">Клиенты</a>
           </li>
-          <li class="navigation__item navigation__item--current">
+          <li class="navigation__item">
             <a href="catalog.html">Магазин</a>
           </li>
           <li class="navigation__item">
@@ -81,12 +81,12 @@
                 <button class="button-price button-price--max" type="button" aria-label="Максимально"></button>
               </div>
 
-              <label class="price__value">От
-                <input type="number" name="min-price" value="0">
+              <label class="price__value">ОТ
+                <input class="price__value price__value--min-price" type="number" name="min-price" value="0">
               </label>
 
-              <label class="price__value">До
-                <input type="number" name="max-price" value="15000">
+              <label class="price__value">ДО
+                <input class="price__value price__value--max-price" type="number" name="max-price" value="15000">
               </label>
             </div>
           </fieldset>
@@ -189,86 +189,67 @@
 
         <!--Список доступных шаблонов-->
         <ul class="templates__list">
-          <li class="templates__item templates__item--current">
-            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
-              <path fill="#4D4D4D"
-                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-            </svg>
+          <li class="templates__item">
             <img src="img/catalog/sedona-site.jpg" width="358" height="578" alt="sedona">
 
-            <div class="templates__card templates__card--current visually-hidden">
+            <div class="templates__card">
               <a class="templates__title" href="blank.html">SEDONA</a>
-              <p class="templates__text">Информационный сайт для&nbsp; туристов</p>
+              <p class="templates__text">Информационный сайт
+                для&nbsp; туристов</p>
               <a class="button button--templates" href="blank.html">9900 руб.</a>
             </div>
 
           </li>
           <li class="templates__item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
-              <path fill="#4D4D4D"
-                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-            </svg>
             <img src="img/catalog/pink-site.jpg" width="358" height="578" alt="Pink">
 
-            <div class="templates__card visually-hidden">
+            <div class="templates__card">
               <a class="templates__title" href="blank.html">PINK APP</a>
-              <p class="templates__text">Продуктовый лендинг приложения для iOS и Android</p>
+              <p class="templates__text">Продуктовый лендинг приложения
+                для iOS и Android</p>
               <a class="button button--templates" href="blank.html">9900 руб.</a>
             </div>
 
           </li>
-          <li class="templates__item ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
-              <path fill="#4D4D4D"
-                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-            </svg>
+          <li class="templates__item">
             <img src="img/catalog/barbershop-site.jpg" width="358" height="578" alt="barbershop">
 
-            <div class="templates__card visually-hidden">
+            <div class="templates__card">
               <a class="templates__title" href="blank.html">BARBERSHOP</a>
-              <p class="templates__text">Сайт салона красоты. Для&nbsp;мужчин, да.</p>
+              <p class="templates__text">Сайт салона красоты.
+                Для&nbsp;мужчин, да.</p>
               <a class="button button--templates" href="blank.html">9900 руб.</a>
             </div>
 
           </li>
           <li class="templates__item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
-              <path fill="#4D4D4D"
-                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-            </svg>
             <img src="img/catalog/mishka-site.jpg" width="358" height="578" alt="mishka">
-
-            <div class="templates__card visually-hidden">
+            <div class="templates__card">
               <a class="templates__title" href="blank.html">MISHKA</a>
-              <p class="templates__text">Интернет-магазин вязаных&nbsp;игрушек</p>
+              <p class="templates__text">Интернет-магазин
+                вязаных&nbsp;игрушек</p>
               <a class="button button--templates" href="blank.html">9900 руб.</a>
             </div>
 
           </li>
           <li class="templates__item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
-              <path fill="#4D4D4D"
-                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-            </svg>
             <img src="img/catalog/aplus-site.jpg" width="358" height="578" alt="A plus">
 
-            <div class="templates__card visually-hidden">
+            <div class="templates__card">
               <a class="templates__title" href="blank.html">A PLUS</a>
-              <p class="templates__text">Лендинг курсов повышения квалификации</p>
+              <p class="templates__text">Лендинг курсов повышения
+                квалификации</p>
               <a class="button button--templates" href="blank.html">9900 руб.</a>
             </div>
 
           </li>
           <li class="templates__item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="358" height="40" viewBox="0 0 358 40">
-              <path fill="#4D4D4D"
-                d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-            </svg>
             <img src="img/catalog/kvast-site.jpg" width="358" height="578" alt="кваст">
 
-            <div class="templates__card visually-hidden">
+            <div class="templates__card">
               <a class="templates__title" href="blank.html">КВАСТ</a>
-              <p class="templates__text">Промо-сайт производителя крафтового кваса</p>
+              <p class="templates__text">Промо-сайт производителя
+                крафтового кваса</p>
               <a class="button button--templates" href="blank.html">9900 руб.</a>
             </div>
 
@@ -313,14 +294,15 @@
           alt="Офис по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </section>
 
-      <section class="contacts wrapper">
-
-        <p class="contacts__title">NERDS DESIGN STUDIO</p>
-        <p class="contacts__adress">191186, Санкт-Петербург ул.Б. Конюшенная д.19/8</p>
-        <p class="contacts__phone">тел &nbsp;
-          <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-        </p>
-        <button class="button button--contacts" type="button">Напишите нам</button>
+      <section class="contacts">
+        <div class="write-us wrapper">
+          <p class="contacts__title">NERDS DESIGN STUDIO</p>
+          <p class="contacts__adress">191186, Санкт-Петербург ул.Б. Конюшенная д.19/8</p>
+          <p class="contacts__phone">тел &nbsp;
+            <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+          </p>
+          <button class="button button--contacts" type="button">Напишите нам</button>
+      </div>
       </section>
 
       <img class="contacts__marker" src="./img/marker-on-map.png" alt="маркер на карте">
@@ -329,37 +311,33 @@
 
     <div class="socials-discount wrapper">
 
-      <section class="socials">
-
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__button" href="https://vk.com" aria-label="vk">
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
-                  fill="white" />
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__button" href="https://facebook.com" aria-label="facebook">
-              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__button" href="https://instagram.com" aria-label="instagram">
-              <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z"
-                  fill="white" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-
-      </section>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__button" href="https://vk.com" aria-label="vk">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__button" href="https://facebook.com" aria-label="facebook">
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__button" href="https://instagram.com" aria-label="instagram">
+            <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
 
       <div class="discount">
         <p class="discount__title">Давайже дружить, это выгодно!</p>

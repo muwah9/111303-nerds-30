@@ -71,6 +71,7 @@
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-text-black);
+  background: var(--basic-white);
 
 
   min-height: 100%;
@@ -82,8 +83,13 @@
 
 .visually-hidden {
 
-  opacity:1%;
-
+  position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
 }
 
 img {
@@ -93,6 +99,11 @@ img {
 
 }
 
+.header {
+
+  background-color: var(--basic-grey);
+
+}
 
 .wrapper {
 
@@ -106,8 +117,6 @@ img {
 
   padding: 16px 40px;
 
-
-  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -143,8 +152,8 @@ img {
 
 .navigation__logo {
 
-  width: 160px;
-  height: 65px;
+  min-width: 160px;
+  min-height: 65px;
   margin-top: 0;
 
 }
@@ -192,14 +201,25 @@ img {
 
 }
 
+.navigation__item a::before {
 
+  content: "";
+  position: absolute;
+  width:100%;
+  height:2px;
+  background-color: var(--basic-red);
+
+}
 
 .navigation__item--current::after {
 
   content: "";
   position: absolute;
-  width:
+  width:100%;
+  background-color: var(--basic-red);
+
 }
+
 .navigation__list a,
 .basket a {
 
@@ -210,7 +230,7 @@ img {
 
 .basket {
 
-  position:relative;
+  position: relative;
   text-align-last: justify;
   width: 115px;
 
@@ -243,9 +263,9 @@ img {
 
   content: "";
   position:absolute;
-  top:100%;
-  right:5%;
-  width:112px;
+  bottom: 0;
+  right: 0;
+  width: 100%;
   height:2px;
   background-color: var(--basic-red);
 
@@ -256,9 +276,7 @@ img {
 .slider {
 
   position: relative;
-  margin: 0;
-  padding: 0;
-  min-height: 431px;
+  background-color: var(--basic-grey);
 
 }
 
@@ -344,7 +362,8 @@ img {
 
   display: grid;
   padding: 0;
-  margin: 80px 0;
+  margin-top:80px;
+  margin-bottom:80px;
 
   background-color: var(--basic-white);
 
@@ -381,9 +400,9 @@ img {
 
 .offers__item p {
 
-  white-space: normal;
-  width: 280px;
-  height: 48px;
+  white-space: pre-line;
+  min-width: 280px;
+  min-height: 48px;
   margin-bottom: 32px;
 
 }
@@ -405,6 +424,7 @@ img {
 .about-company::after {
 
   content:"";
+  display: block;
   position: absolute;
   width:1160px;
   height:2px;
@@ -468,6 +488,7 @@ img {
 .company__list li:before {
 
   content: "";
+  display: block;
   position: absolute;
   width: 21px;
   height: 2px;
@@ -567,7 +588,8 @@ img {
 
   content: "";
   position: absolute;
-  width:1160px;
+  opacity:1;
+  width:100%;
   height:2px;
   background-color: var(--basic-grey);
 
@@ -575,7 +597,8 @@ img {
 
 .clients::after {
 
-  top:100%
+  top:100%;
+  left:0;
 
 }
 
@@ -593,7 +616,7 @@ img {
 
 }
 
-.clients__item {
+.clients__link {
 
   opacity: 0.2;
   padding-left: 80px;
@@ -620,14 +643,14 @@ img {
 
 }
 
-.clients__item:hover,
-.clients__item:focus {
+.clients__link:hover,
+.clients__link:focus {
 
   opacity: 100%;
 
 }
 
-.clients__item:active {
+.clients__link:active {
 
   opacity: 0.1;
 
@@ -718,7 +741,7 @@ img {
 .button--catalog {
 
   width: 260px;
-  margin-top:48px;
+  margin-top:50px;
   color: var(--basic-black);
   background: var(--basic-grey);
   text-transform: none;
@@ -882,7 +905,7 @@ img {
 
 }
 
-.contacts {
+.contacts-wrapper {
 
   position: absolute;
   text-align: center;
@@ -893,6 +916,8 @@ img {
   background-color: var(--basic-white);
 
 }
+
+
 
 
 .contacts__title {
@@ -947,13 +972,8 @@ img {
 
 }
 
+
 .socials {
-
-  margin-top: 68px;
-
-}
-
-.socials__list {
 
   display: flex;
   flex-direction: row;
@@ -1013,6 +1033,7 @@ img {
   display: grid;
   grid-template-columns: 260px 1fr;
   margin-bottom: 60px;
+  margin-top:55px;
 
 }
 
@@ -1048,6 +1069,8 @@ img {
   padding-top:80px;
   padding-bottom:105px;
   margin:0;
+  padding-left:100px;
+  padding-right:50px;
 
 }
 
@@ -1141,20 +1164,21 @@ img {
 
   width: 80px;
   padding: 10px 0;
-  margin-left: 10px;
+  margin-left: 7px;
   border: none;
   border-radius: 5px;
   text-align:center;
   font-family: inherit;
   font-size: inherit;
+  line-height: 22px;
   color: var(--basic-text-black);
   background: var(--basic-grey);
 
 }
 
-.price__value input[name="min-price"] {
+.price__value--min-price {
 
-  margin-right:28px;
+  margin-right:30px;
 
 }
 
@@ -1169,6 +1193,7 @@ img {
   color: var(--basic-black);
 
 }
+
 
 .grid__text,
 .features__text {
@@ -1203,6 +1228,12 @@ img {
 
 }
 
+.features__title {
+
+  padding-top:47px
+
+}
+
 .features input {
 
   opacity: 0.4;
@@ -1213,7 +1244,7 @@ img {
 .features label,
 .grid label {
 
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 
@@ -1295,9 +1326,11 @@ img {
 
 
   position:absolute;
-  top:60%;
-  width:360px;
-  height:231px;
+  bottom: 0;
+  opacity:0;
+  left:0;
+  width: 100%;
+  min-height: 231px;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1305,21 +1338,17 @@ img {
   justify-content: center;
   background: var(--basic-grey);
   text-align: center;
+  outline:none;
 
 }
 
-.templates__card--current {
-
-  opacity:1;
-
-}
 
 .templates__list {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 72px;
-  column-gap: 30px;
+  row-gap: 30px;
+  column-gap: 41px;
   padding: 0;
   margin: 0;
   margin-top: 49px;
@@ -1331,8 +1360,8 @@ img {
 .templates__item {
 
   position: relative;
-  width: 358px;
-  height: 580px;
+  width:100%;
+  min-height: 580px;
   object-fit: contain;
 
 }
@@ -1371,10 +1400,10 @@ img {
 .templates__text {
 
   margin:0;
-
   margin-top: 12px;
-  width: 255px;
-  height: 36px;
+  min-width: 255px;
+  min-height: 36px;
+  white-space: pre-line;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1383,28 +1412,35 @@ img {
 
 }
 
-.templates__item svg {
+.templates__item::before {
 
-  position: absolute;
-  opacity:0.12;
-  bottom:100%;
+  content: "";
+  display:block;
+  position: relative;
+  width:100%;
+  height:40px;
+  background-color: var(--basic-light-black);
+  opacity: 0.12;
+  top:0;
+  left:0;
+  border-radius:5px;
 
 }
 
-.templates__item--current > svg {
+
+.templates__item:hover::before,
+.templates__item:focus::before {
 
   opacity:1;
-
 }
 
 .templates__item:focus,
 .templates__item:hover {
 
   box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
-  border-radius: 5px;
-  outline:none;
 
 }
+
 
 .templates__item:hover > svg,
 .templates__item:focus > svg {
