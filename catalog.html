@@ -16,8 +16,8 @@
 </head>
 
 <body class="page__body">
-  <div class="wrapper">
-    <header class="header">
+  <header class="header">
+    <div class="wrapper">
       <!--Меню сайта , navigation-->
       <nav class="navigation">
 
@@ -32,7 +32,7 @@
           <li class="navigation__item">
             <a href="blank.html">Клиенты</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--current">
             <a href="catalog.html">Магазин</a>
           </li>
           <li class="navigation__item">
@@ -57,232 +57,231 @@
         </div>
 
       </nav>
+    </div>
+    <h1>Магазин готовых шаблонов</h1>
 
-      <h1>Магазин готовых шаблонов</h1>
+  </header>
 
-    </header>
+  <main class="catalog wrapper">
+    <!--Каталог+цены-->
 
-    <main class="catalog">
-      <!--Каталог+цены-->
+    <section class="catalog__form">
 
-      <section class="catalog__form">
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="price">
+          <legend class="price__title ">Стоимость:</legend>
 
-        <form action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset class="price">
-            <legend class="price__title ">Стоимость:</legend>
-
-            <div class="price__filter">
-              <div class="price__controls">
-                <div class="price__scale">
-                  <div class="price__bar">
-                  </div>
+          <div class="price__filter">
+            <div class="price__controls">
+              <div class="price__scale">
+                <div class="price__bar">
                 </div>
-                <button class="button-price button-price--min" type="button" aria-label="Минимально"></button>
-                <button class="button-price button-price--max" type="button" aria-label="Максимально"></button>
               </div>
-
-              <label class="price__value">ОТ
-                <input class="price__value price__value--min-price" type="number" name="min-price" value="0">
-              </label>
-
-              <label class="price__value">ДО
-                <input class="price__value price__value--max-price" type="number" name="max-price" value="15000">
-              </label>
+              <button class="button-price button-price--min" type="button" aria-label="Минимально"></button>
+              <button class="button-price button-price--max" type="button" aria-label="Максимально"></button>
             </div>
-          </fieldset>
 
-          <fieldset class="grid">
-            <legend class="grid__title">Сетка:</legend>
-            <label>
-              <input type="radio" name="grid" value="adaptive" checked>
-              <span class="grid__text">Адаптивная</span>
+            <label class="price__value">ОТ
+              <input class="price__value price__value--min-price" type="number" name="min-price" value="0">
             </label>
 
-            <label>
-              <input type="radio" name="grid" value="fixed">
-              <span class="grid__text">Фиксированная</span>
+            <label class="price__value">ДО
+              <input class="price__value price__value--max-price" type="number" name="max-price" value="15000">
             </label>
+          </div>
+        </fieldset>
 
-            <label>
-              <input type="radio" name="grid" value="responsive">
-              <span class="grid__text">Резиновая</span>
-            </label>
-          </fieldset>
+        <fieldset class="grid">
+          <legend class="grid__title">Сетка:</legend>
+          <label>
+            <input class="grid__input" type="radio" name="grid" value="adaptive" checked>
+            <span class="grid__text">Адаптивная</span>
+          </label>
 
-          <fieldset class="features">
-            <legend class="features__title">Особенности:</legend>
-            <label>
-              <input type="checkbox" name="slider" checked>
-              <span class="features__text">Слайдер</span>
-            </label>
+          <label>
+            <input class="grid__input" type="radio" name="grid" value="fixed">
+            <span class="grid__text">Фиксированная</span>
+          </label>
 
-            <label>
-              <input type="checkbox" name="advantages">
-              <span class="features__text">Блок Преимущества</span>
-            </label>
+          <label>
+            <input class="grid__input" type="radio" name="grid" value="responsive">
+            <span class="grid__text">Резиновая</span>
+          </label>
+        </fieldset>
 
-            <label>
-              <input type="checkbox" name="news" checked>
-              <span class="features__text">Новости</span>
-            </label>
+        <fieldset class="features">
+          <legend class="features__title">Особенности:</legend>
+          <label>
+            <input class="features__input" type="checkbox" name="slider" checked>
+            <span class="features__text">Слайдер</span>
+          </label>
 
-            <label>
-              <input type="checkbox" name="gallery">
-              <span class="features__text">Галерея</span>
-            </label>
+          <label>
+            <input class="features__input" type="checkbox" name="advantages">
+            <span class="features__text">Блок Преимущества</span>
+          </label>
 
-            <label>
-              <input type="checkbox" name="basket">
-              <span class="features__text">Корзина</span>
-            </label>
+          <label>
+            <input class="features__input" type="checkbox" name="news" checked>
+            <span class="features__text">Новости</span>
+          </label>
 
-          </fieldset>
+          <label>
+            <input class="features__input" type="checkbox" name="gallery">
+            <span class="features__text">Галерея</span>
+          </label>
 
-          <button class="button button--catalog" type="submit">
-            <span>Показать</span>
-          </button>
+          <label>
+            <input class="features__input" type="checkbox" name="basket">
+            <span class="features__text">Корзина</span>
+          </label>
 
-        </form>
+        </fieldset>
 
-      </section>
+        <button class="button button--catalog" type="submit">
+          <span>Показать</span>
+        </button>
 
-      <section class="types">
+      </form>
 
-        <div class="sort">
+    </section>
 
-          <h3 class="sort__title">Сортировать:</h3>
-          <ul class="sort__list">
+    <section class="types">
 
-            <li class="sort__item">
-              <a class="sort__item--button sort__item--current" href="blank.html">По цене</a>
-            </li>
+      <div class="sort">
 
-            <li class="sort__item">
-              <a class="sort__item--button" href="blank.html">По типу</a>
+        <h3 class="sort__title">Сортировать:</h3>
+        <ul class="sort__list">
 
-            </li>
+          <li class="sort__item">
+            <a class="sort__item--button sort__item--current" href="blank.html">По цене</a>
+          </li>
 
-            <li class="sort__item">
-              <a class="sort__item--button" href="blank.html">По названию</a>
-            </li>
-
-            <li class="sort__item">
-              <a class="sort__item--button sort__item--current" href="blank.html">
-                <img src="img/icon-down-price.png" alt="По убыванию">
-              </a>
-            </li>
-
-            <li class="sort__item">
-              <a class="sort__item--button " href="blank.html">
-                <img src="img/icon-up-price.png" alt="По возрастанию">
-              </a>
-            </li>
-
-
-          </ul>
-
-        </div>
-
-      </section>
-
-      <section class="templates">
-
-        <!--Список доступных шаблонов-->
-        <ul class="templates__list">
-          <li class="templates__item">
-            <img src="img/catalog/sedona-site.jpg" width="358" height="578" alt="sedona">
-
-            <div class="templates__card">
-              <a class="templates__title" href="blank.html">SEDONA</a>
-              <p class="templates__text">Информационный сайт
-                для&nbsp; туристов</p>
-              <a class="button button--templates" href="blank.html">9900 руб.</a>
-            </div>
+          <li class="sort__item">
+            <a class="sort__item--button" href="blank.html">По типу</a>
 
           </li>
-          <li class="templates__item">
-            <img src="img/catalog/pink-site.jpg" width="358" height="578" alt="Pink">
 
-            <div class="templates__card">
-              <a class="templates__title" href="blank.html">PINK APP</a>
-              <p class="templates__text">Продуктовый лендинг приложения
-                для iOS и Android</p>
-              <a class="button button--templates" href="blank.html">9900 руб.</a>
-            </div>
-
+          <li class="sort__item">
+            <a class="sort__item--button" href="blank.html">По названию</a>
           </li>
-          <li class="templates__item">
-            <img src="img/catalog/barbershop-site.jpg" width="358" height="578" alt="barbershop">
 
-            <div class="templates__card">
-              <a class="templates__title" href="blank.html">BARBERSHOP</a>
-              <p class="templates__text">Сайт салона красоты.
-                Для&nbsp;мужчин, да.</p>
-              <a class="button button--templates" href="blank.html">9900 руб.</a>
-            </div>
-
+          <li class="sort__item">
+            <a class="sort__item--button sort__item--current" href="blank.html">
+              <img src="img/icon-down-price.png" alt="По убыванию">
+            </a>
           </li>
-          <li class="templates__item">
-            <img src="img/catalog/mishka-site.jpg" width="358" height="578" alt="mishka">
-            <div class="templates__card">
-              <a class="templates__title" href="blank.html">MISHKA</a>
-              <p class="templates__text">Интернет-магазин
-                вязаных&nbsp;игрушек</p>
-              <a class="button button--templates" href="blank.html">9900 руб.</a>
-            </div>
 
+          <li class="sort__item">
+            <a class="sort__item--button " href="blank.html">
+              <img src="img/icon-up-price.png" alt="По возрастанию">
+            </a>
           </li>
-          <li class="templates__item">
-            <img src="img/catalog/aplus-site.jpg" width="358" height="578" alt="A plus">
 
-            <div class="templates__card">
-              <a class="templates__title" href="blank.html">A PLUS</a>
-              <p class="templates__text">Лендинг курсов повышения
-                квалификации</p>
-              <a class="button button--templates" href="blank.html">9900 руб.</a>
-            </div>
-
-          </li>
-          <li class="templates__item">
-            <img src="img/catalog/kvast-site.jpg" width="358" height="578" alt="кваст">
-
-            <div class="templates__card">
-              <a class="templates__title" href="blank.html">КВАСТ</a>
-              <p class="templates__text">Промо-сайт производителя
-                крафтового кваса</p>
-              <a class="button button--templates" href="blank.html">9900 руб.</a>
-            </div>
-
-          </li>
 
         </ul>
 
-        <ul class="pages">
-          <li class="pages__number">
-            <a class="button button--pages current" href="#">
-              <span>1</span>
-            </a>
-          </li>
-          <li class="pages__number">
-            <a class="button button--pages" href="blank.html">
-              <span>2</span>
-            </a>
-          </li>
-          <li class="pages__number">
-            <a class="button button--pages" href=" blank.html">
-              <span>3</span>
-            </a>
-          </li>
-          <li class="pages__number">
-            <a class="button button--pages" href="blank.html">
-              <span>Cледующая</span>
-            </a>
-        </ul>
+      </div>
 
-      </section>
+    </section>
 
-    </main>
-  </div>
+    <section class="templates">
+
+      <!--Список доступных шаблонов-->
+      <ul class="templates__list">
+        <li class="templates__item">
+          <img src="img/catalog/sedona-site.jpg" width="358" height="578" alt="sedona">
+
+          <div class="templates__card">
+            <a class="templates__title" href="blank.html">SEDONA</a>
+            <p class="templates__text">Информационный сайт
+              для&nbsp; туристов</p>
+            <a class="button button--templates" href="blank.html">9900 руб.</a>
+          </div>
+
+        </li>
+        <li class="templates__item">
+          <img src="img/catalog/pink-site.jpg" width="358" height="578" alt="Pink">
+
+          <div class="templates__card">
+            <a class="templates__title" href="blank.html">PINK APP</a>
+            <p class="templates__text">Продуктовый лендинг приложения
+              для iOS и Android</p>
+            <a class="button button--templates" href="blank.html">9900 руб.</a>
+          </div>
+
+        </li>
+        <li class="templates__item">
+          <img src="img/catalog/barbershop-site.jpg" width="358" height="578" alt="barbershop">
+
+          <div class="templates__card">
+            <a class="templates__title" href="blank.html">BARBERSHOP</a>
+            <p class="templates__text">Сайт салона красоты.
+              Для&nbsp;мужчин, да.</p>
+            <a class="button button--templates" href="blank.html">9900 руб.</a>
+          </div>
+
+        </li>
+        <li class="templates__item">
+          <img src="img/catalog/mishka-site.jpg" width="358" height="578" alt="mishka">
+          <div class="templates__card">
+            <a class="templates__title" href="blank.html">MISHKA</a>
+            <p class="templates__text">Интернет-магазин
+              вязаных&nbsp;игрушек</p>
+            <a class="button button--templates" href="blank.html">9900 руб.</a>
+          </div>
+
+        </li>
+        <li class="templates__item">
+          <img src="img/catalog/aplus-site.jpg" width="358" height="578" alt="A plus">
+
+          <div class="templates__card">
+            <a class="templates__title" href="blank.html">A PLUS</a>
+            <p class="templates__text">Лендинг курсов повышения
+              квалификации</p>
+            <a class="button button--templates" href="blank.html">9900 руб.</a>
+          </div>
+
+        </li>
+        <li class="templates__item">
+          <img src="img/catalog/kvast-site.jpg" width="358" height="578" alt="кваст">
+
+          <div class="templates__card">
+            <a class="templates__title" href="blank.html">КВАСТ</a>
+            <p class="templates__text">Промо-сайт производителя
+              крафтового кваса</p>
+            <a class="button button--templates" href="blank.html">9900 руб.</a>
+          </div>
+
+        </li>
+
+      </ul>
+
+      <ul class="pages">
+        <li class="pages__number">
+          <a class="button button--pages current" href="#">
+            <span>1</span>
+          </a>
+        </li>
+        <li class="pages__number">
+          <a class="button button--pages" href="blank.html">
+            <span>2</span>
+          </a>
+        </li>
+        <li class="pages__number">
+          <a class="button button--pages" href=" blank.html">
+            <span>3</span>
+          </a>
+        </li>
+        <li class="pages__number">
+          <a class="button button--pages" href="blank.html">
+            <span>Cледующая</span>
+          </a>
+      </ul>
+
+    </section>
+
+  </main>
 
   <footer class="footer">
 
@@ -302,7 +301,7 @@
             <a href="tel:+78122757575">+7 (812) 275-75-75</a>
           </p>
           <button class="button button--contacts" type="button">Напишите нам</button>
-      </div>
+        </div>
       </section>
 
       <img class="contacts__marker" src="./img/marker-on-map.png" alt="маркер на карте">
