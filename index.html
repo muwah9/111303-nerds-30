@@ -77,7 +77,7 @@
     <section class="slider">
 
       <div class="wrapper">
-        <ul class="slider__list ">
+        <ul class="slider__list">
 
           <li class="slider__item slider__item--current">
 
@@ -250,26 +250,23 @@
   <footer class="footer">
 
     <!--Как нас найти?-->
+
     <div class="map-contacts">
-
-      <section class="footer__map">
-        <img src="img/map.jpg" width="1440" height="416"
-          alt="Офис по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-      </section>
-
-      <section class="contacts">
-        <div class="write-us wrapper">
+      <iframe class="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716014556!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614189239949!5m2!1sru!2sru"
+        width="1400" height="416" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+      <section class="contacts wrapper">
+        <div class="write-us">
           <p class="contacts__title">NERDS DESIGN STUDIO</p>
-          <p class="contacts__adress">191186, Санкт-Петербург ул.Б. Конюшенная д.19/8</p>
-          <p class="contacts__phone">тел &nbsp;
+          <p class="contacts__adress">191186, Санкт-Петербург
+            ул.Б. Конюшенная д.19/8</p>
+          <p class="contacts__phone">тел.
             <a href="tel:+78122757575">+7 (812) 275-75-75</a>
           </p>
           <button class="button button--contacts" type="button">Напишите нам</button>
         </div>
+        <img class="marker" src="./img/marker-on-map.png" alt="маркер на карте">
       </section>
-
-      <img class="contacts__marker" src="./img/marker-on-map.png" alt="маркер на карте">
-
     </div>
 
     <div class="socials-discount wrapper">
@@ -300,7 +297,6 @@
                 d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
                 fill="white" />
             </svg>
-
           </a>
         </li>
       </ul>
@@ -308,12 +304,11 @@
       <div class="discount">
         <p class="discount__title">Давайже дружить, это выгодно!</p>
         <p class="discount__text">Скидка 10% для друзей из социальных сетей</p>
-
       </div>
 
     </div>
 
-    <div class="popup-write-us wrapper visually-hidden">
+    <div class="popup-write-us wrapper">
       <h2 class="popup__title">НАПИШИТЕ НАМ</h2>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="GET">
         <label for="name" class="feedback__name">Ваше имя:
@@ -328,6 +323,7 @@
         <button class="button button--feedback" type="button" aria-label="кнопка отправить">Напишите нам</button>
       </form>
     </div>
+
   </footer>
 </body>
 

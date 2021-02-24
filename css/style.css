@@ -61,7 +61,18 @@
 
 /* GLOBAL */
 
+.page {
+
+  height:100%;
+
+}
+
 .page__body {
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100%;
 
   margin: 0;
   padding: 0;
@@ -72,12 +83,6 @@
   font-weight: 400;
   color: var(--basic-text-black);
   background: var(--basic-white);
-
-
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 
 }
 
@@ -816,7 +821,6 @@ img {
 
   padding:16px 45px;
   margin-top:37px;
-  margin-bottom: 47px;
 
 }
 
@@ -937,39 +941,47 @@ img {
 
 /* footer */
 
-.footer__map img {
-
-  width: 100%;
-  height: 416px;
-
-}
-
 .map-contacts {
 
   position: relative;
-  margin-bottom: 15px;
 
 }
 
 .contacts {
 
+  position: relative;
+  min-width:1160px;
+  margin-bottom: 15px;
+
+}
+
+.map  {
+
+  width:100%;
+  height:416px;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.write-us {
+
   position: absolute;
-  text-align: center;
-  left:5%;
-  top: 15%;
-  width: 310px;
-  height: 310px;
+  text-align: left;
+  left:0;
+  bottom: 54px;
+  padding:50px 50px;
   background-color: var(--basic-white);
 
 }
 
 
 
-
 .contacts__title {
 
   margin:0;
-  margin-top:50px;
   margin-bottom:22px;
   font-style: normal;
   font-weight: bold;
@@ -983,6 +995,7 @@ img {
 .contacts__phone,
 .contacts__adress {
 
+  white-space: pre-line;
   margin:0;
   font-weight: 400;
   font-style: normal;
@@ -992,11 +1005,22 @@ img {
 
 }
 
-.contacts__marker {
+.marker {
 
   position: absolute;
-  left: 57%;
-  bottom: 35%;
+  bottom:0;
+  top:0;
+  right:0;
+  left:0;
+  margin:auto;
+
+}
+
+
+.contacts__phone {
+
+  white-space: normal;
+  margin-top:22px;
 
 }
 
@@ -1072,8 +1096,13 @@ img {
 
 .popup-write-us {
 
-  min-width:960px;
-  max-height:540px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: none;
   background: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 
@@ -1247,7 +1276,6 @@ img {
   min-height:118px;
 
 }
-
 
 /* Catalog Styles */
 
