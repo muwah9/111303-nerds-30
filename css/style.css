@@ -1409,6 +1409,12 @@ img {
 
 }
 
+.grid__input:disabled + span::before {
+
+  opacity: 0.1;
+
+}
+
 
 .grid__input:checked + span::after {
 
@@ -1429,6 +1435,12 @@ img {
 .grid__input:checked + span:focus::after {
 
   opacity:1;
+
+}
+
+.grid__input:checked:disabled + span::after {
+
+  opactiy:0.1;
 
 }
 
@@ -1520,6 +1532,18 @@ img {
 .features__input:checked + span:focus::before {
 
   opacity:1;
+
+}
+
+.features__input:checked:disabled + span::before {
+
+  opacity: 0.1;
+
+}
+
+.features__input:disabled + span::before {
+
+  opacity: 0.1;
 
 }
 
