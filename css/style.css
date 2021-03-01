@@ -712,16 +712,16 @@ img {
 
 .clients__list {
 
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 40px;
-  row-gap: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding-left: 0;
   list-style: none;
   padding-top: 50px;
-  padding-bottom: 44px;
+  padding-bottom: 40px;
 
 }
 
@@ -729,11 +729,16 @@ img {
 .clients__item {
 
   position: relative;
-  padding: 0 40px;
+  padding-left:85px;
+  min-width:220px;
 
 }
 
+.clients__item:nth-child(4n+1) {
 
+  padding-left:25px;
+
+}
 
 
 .clients__link {
@@ -751,7 +756,7 @@ img {
   width: 2px;
   height: 58px;
   bottom: 50%;
-  right:0;
+  right:-30px;
   opacity: 1;
   background-color: var(--basic-grey);
   transform: translateY(50%);
