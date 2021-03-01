@@ -751,13 +751,14 @@ img {
   width: 2px;
   height: 58px;
   bottom: 50%;
+  right:0;
   opacity: 1;
   background-color: var(--basic-grey);
   transform: translateY(50%);
 
 }
 
-.clients__item:last-child::after {
+.clients__item:nth-child(4n+4)::after {
 
   display: none;
 
