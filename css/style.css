@@ -246,9 +246,8 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  min-width: 100%;
-  min-height: 30px;
+  justify-content: flex-start;
+  align-self: flex-end;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -260,6 +259,7 @@ img {
   position: relative;
   text-align: center;
   padding-right: 45px;
+  padding-bottom: 20px;
   min-width: 65px;
 
 }
@@ -276,7 +276,7 @@ img {
 
   content: "";
   position: absolute;
-  bottom: -15px;
+  bottom: 6px;
   left: 0;
   min-width: 75px;
   height: 2px;
@@ -297,6 +297,7 @@ img {
 .basket {
 
   position: relative;
+  align-self: center;
   text-align-last: justify;
   padding-left: 37px;
   min-width: 115px;
@@ -682,10 +683,7 @@ img {
 .clients {
 
   position: relative;
-  display: flex;
   min-height: 180px;
-  flex-wrap: wrap;
-  flex-direction: row;
   margin-bottom: 80px;
 
 }
@@ -729,14 +727,14 @@ img {
 .clients__item {
 
   position: relative;
-  padding-left:85px;
-  min-width:220px;
+  padding-left: 85px;
+  min-width: 220px;
 
 }
 
 .clients__item:nth-child(4n+1) {
 
-  padding-left:25px;
+  padding-left: 25px;
 
 }
 
@@ -756,7 +754,7 @@ img {
   width: 2px;
   height: 58px;
   bottom: 50%;
-  right:-30px;
+  right: -30px;
   opacity: 1;
   background-color: var(--basic-grey);
   transform: translateY(50%);
@@ -790,7 +788,7 @@ img {
 
 .button--item {
 
-  padding: 16px 55px;
+  padding: 16px 54px;
   background: var(--basic-red);
   text-transform: none;
 
@@ -1023,6 +1021,9 @@ img {
 .map-contacts {
 
   position: relative;
+  background-image: url(../img/map.jpg);
+  background-size: cover;
+  background-position: bottom;
 
 }
 
@@ -1085,10 +1086,9 @@ img {
 .marker {
 
   position: absolute;
-  bottom: 150px;
-  right: 350px;
+  bottom: 145px;
+  right: 247px;
   margin: auto;
-  padding: 50px 50px;
 
 }
 
