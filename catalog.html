@@ -33,16 +33,16 @@
 
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="blank.html">Студия</a>
+          <a href="blank.html" aria-label="ссыдка на страницу Студия">Студия</a>
         </li>
         <li class="navigation__item">
-          <a href="blank.html">Клиенты</a>
+          <a href="blank.html" aria-label="ссылка  на страницу клиенты">Клиенты</a>
         </li>
         <li class="navigation__item navigation--current">
-          <a href="catalog.html">Магазин</a>
+          <a href="catalog.html" aria-label="ссылка на страницу Магазин">Магазин</a>
         </li>
         <li class="navigation__item">
-          <a href="blank.html">Контакты</a>
+          <a href="blank.html" aria-label="ссылка на страницу контакты">Контакты</a>
         </li>
 
       </ul>
@@ -91,7 +91,8 @@
             </label>
 
             <label for="max-price" class="price__value">ДО
-              <input id="max-price" class="price__value price__value--max-price" type="text" name="max-price" value="15000">
+              <input id="max-price" class="price__value price__value--max-price" type="text" name="max-price"
+                value="15000">
             </label>
           </div>
         </fieldset>
@@ -99,7 +100,7 @@
         <fieldset class="grid">
           <legend class="grid__title">СЕТКА:</legend>
           <label for="adaptive">
-            <input  id="adaptive" class="grid__input visually-hidden" type="radio" name="grid" value="adaptive" checked>
+            <input id="adaptive" class="grid__input visually-hidden" type="radio" name="grid" value="adaptive" checked>
             <span class="grid__text">Адаптивная</span>
           </label>
 
@@ -123,11 +124,11 @@
 
           <label for="advantages">
             <input id="advantages" class="features__input visually-hidden" type="checkbox" name="advantages">
-            <span class="features__text">Блок преимущества</span>
+            <span class="features__text">Блок преимуществ</span>
           </label>
 
           <label for="news">
-            <input  id="news" class="features__input visually-hidden" type="checkbox" name="news" checked>
+            <input id="news" class="features__input visually-hidden" type="checkbox" name="news" checked>
             <span class="features__text">Новости</span>
           </label>
 
@@ -293,20 +294,26 @@
 
     <!--Как нас найти?-->
     <div class="map-contacts">
-      <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A228e6a2b34563bde521865410a3801784bf542de391aea49c946b68ae434c9b3&amp;source=constructor" width="100%" height="416" frameborder="0">
+
+      <iframe class="map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A228e6a2b34563bde521865410a3801784bf542de391aea49c946b68ae434c9b3&amp;source=constructor"
+        width="100%" height="416" frameborder="0"
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </iframe>
+
       <section class="contacts wrapper">
         <div class="write-us">
           <p class="contacts__title">NERDS DESIGN STUDIO</p>
           <p class="contacts__adress">191186, Санкт-Петербург
-            ул.Б. Конюшенная д.19/8</p>
+            ул. Б. Конюшенная &nbsp;д.&nbsp;19/8</p>
           <p class="contacts__phone">тел.
-            <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+            <a href="tel:+78122757575" aria-label="телефон студии Нёрдс">+7 (812) 275-75-75</a>
           </p>
-          <button class="button button--contacts" type="button">Напишите нам</button>
+          <button class="button button--contacts" type="button" aria-label="кнопка напишите нам">Напишите нам</button>
         </div>
         <img class="marker" src="./img/marker-on-map.png" alt="маркер на карте">
       </section>
+
     </div>
 
     <div class="socials-discount wrapper">
@@ -349,28 +356,26 @@
     </div>
 
     <div class="popup wrapper">
-      <h2 class="popup__title">НАПИШИТЕ НАМ</h2>
+      <h2 class="popup__title">Напишите нам</h2>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="GET">
         <label for="name" class="feedback__name">Ваше имя:
-          <input id ="name" type="text" name="name" placeholder="Имя Фамилия">
+          <input id="name" type="text" name="name" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{2,6}">
         </label>
         <label for="email" class="feedback__email">Ваш email:
-          <input id="email" type="text" name="email" placeholder="email@example.com">
+          <input id="email" type="text" name="email" placeholder="email@example.com" minlength="10" maxlength="25">
         </label>
         <label for="textarea" class="feedback__textarea">Текст письма:
-          <input id="textarea" type="text" name="textarea" placeholder="В свободной форме"></input>
+          <textarea id="textarea" type="text" name="textarea" placeholder="В свободной форме"></textarea>
         </label>
-        <button class="button button--feedback" type="submit" aria-label="кнопка отправить">Напишите нам</button>
-        <button class="popup__close" type="button" aria-label="Закрыть"></button>
+        <button class="button button--feedback" type="submit" aria-label="кнопка отправить">ОТПРАВИТЬ</button>
+        <button class="popup__close" type="button" aria-label="кнопка закрыть"></button>
       </form>
     </div>
-
 
   </footer>
 
   <script src="js/modal.js">
   </script>
-
 </body>
 
 </html>
