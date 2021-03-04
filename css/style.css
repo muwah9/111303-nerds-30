@@ -690,7 +690,7 @@ img {
 
   position: relative;
   min-height: 180px;
-  margin-bottom: 85px;
+  margin-bottom: 83px;
 
 }
 
@@ -725,7 +725,7 @@ img {
   padding-left: 0;
   list-style: none;
   padding-top: 47px;
-  padding-bottom: 30px;
+  padding-bottom: 41px;
 
 }
 
@@ -733,7 +733,7 @@ img {
 .clients__item {
 
   position: relative;
-  padding-left: 82px;
+  padding-left: 83px;
   min-width: 220px;
 
 }
@@ -742,6 +742,12 @@ img {
 
   padding-left: 33px;
   padding-top: 10px;
+
+}
+
+.clients__item:nth-child(2) {
+
+  padding-left: 77px;
 
 }
 
@@ -1026,6 +1032,12 @@ img {
 
 /* footer */
 
+.footer {
+
+  margin-bottom: 50px;
+
+}
+
 .map-contacts {
 
   position: relative;
@@ -1141,7 +1153,7 @@ img {
 
 .socials__item {
 
-  padding-right: 10px;
+  padding-right: 7px;
 
 }
 
@@ -1151,7 +1163,8 @@ img {
   flex-direction: column;
   align-self: center;
   flex-wrap: wrap;
-  margin-left: 38px;
+  margin-left: 35px;
+  margin-top: 5px;
 
 }
 
@@ -1250,7 +1263,7 @@ img {
 .popup__close:hover {
 
   opacity: 1;
-  cursor:pointer;
+  cursor: pointer;
 
 }
 
