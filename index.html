@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
@@ -309,14 +309,14 @@
       <h2 class="popup__title">Напишите нам</h2>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="GET">
         <label for="name" class="feedback__name">Ваше имя:
-          <input class="feedback__input" type="text" name="name" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{2,6}">
+          <input class="feedback__input"  id="name" type="text" name="name" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{2,6}">
         </label>
         <label for="email" class="feedback__email">Ваш email:
           <input class="feedback__input" id="email" type="text" name="email" placeholder="email@example.com"
             minlength="10" maxlength="25">
         </label>
         <label for="textarea" class="feedback__textarea">Текст письма:
-          <textarea id="textarea" type="text" name="textarea" placeholder="В свободной форме"></textarea>
+          <textarea id="textarea"  name="textarea" placeholder="В свободной форме"></textarea>
         </label>
         <button class="button button--feedback" type="submit" aria-label="кнопка отправить">ОТПРАВИТЬ</button>
         <button class="popup__close" type="button" aria-label="кнопка закрыть"></button>
@@ -325,7 +325,7 @@
 
   </footer>
 
-  <script src="js/modal.js">
+  <script src="js/modal.min.js">
   </script>
 </body>
 
