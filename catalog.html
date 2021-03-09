@@ -33,22 +33,22 @@
 
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="blank.html" aria-label="ссыдка на страницу Студия">Студия</a>
+          <a href="blank.html">Студия</a>
         </li>
         <li class="navigation__item">
-          <a href="blank.html" aria-label="ссылка  на страницу клиенты">Клиенты</a>
+          <a href="blank.html">Клиенты</a>
         </li>
         <li class="navigation__item navigation--current">
-          <a href="catalog.html" aria-label="ссылка на страницу Магазин">Магазин</a>
+          <a href="catalog.html">Магазин</a>
         </li>
         <li class="navigation__item">
-          <a href="blank.html" aria-label="ссылка на страницу контакты">Контакты</a>
+          <a href="blank.html">Контакты</a>
         </li>
 
       </ul>
 
       <div class="basket">
-        <a href="blank.html" aria-label="Корзина">
+        <a href="blank.html">
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
@@ -158,34 +158,20 @@
 
         <h3 class="sort__title">Сортировать:</h3>
         <ul class="sort__list">
-
           <li class="sort__item">
             <a class="sort__item--button sort__item--current" href="blank.html">По цене</a>
           </li>
-
           <li class="sort__item">
             <a class="sort__item--button" href="blank.html">По типу</a>
-
           </li>
-
           <li class="sort__item">
             <a class="sort__item--button" href="blank.html">По названию</a>
           </li>
-
-          <li class="sort__item">
-            <a class="sort__item--button sort__item--current" href="blank.html">
-              <img src="img/icon-down-price.png" alt="По убыванию">
-            </a>
-          </li>
-
-          <li class="sort__item">
-            <a class="sort__item--button " href="blank.html">
-              <img src="img/icon-up-price.png" alt="По возрастанию">
-            </a>
-          </li>
-
-
         </ul>
+        <div class="sort-button">
+          <a class="sort-button__down sort-button--current" href="#" aria-label="по убыванию"></a>
+          <a class="sort-button__up" href="#" aria-label="по возрастанию"></a>
+        </div>
 
       </div>
 
@@ -266,22 +252,22 @@
 
       <ul class="pages">
         <li class="pages__number">
-          <a class="button button--pages current">
+          <a class="pages__button current-button">
             <span>1</span>
           </a>
         </li>
         <li class="pages__number">
-          <a class="button button--pages" href="blank.html">
+          <a class="pages__button" href="blank.html">
             <span>2</span>
           </a>
         </li>
         <li class="pages__number">
-          <a class="button button--pages" href=" blank.html">
+          <a class="pages__button" href=" blank.html">
             <span>3</span>
           </a>
         </li>
         <li class="pages__number">
-          <a class="button button--pages" href="blank.html">
+          <a class="pages__button" href="blank.html">
             <span>Cледующая</span>
           </a>
       </ul>
@@ -307,7 +293,7 @@
           <p class="contacts__adress">191186, Санкт-Петербург
             ул. Б. Конюшенная &nbsp;д.&nbsp;19/8</p>
           <p class="contacts__phone">тел.
-            <a href="tel:+78122757575" aria-label="телефон студии Нёрдс">+7 (812) 275-75-75</a>
+            <a href="tel:+78122757575">+7 (812) 275-75-75</a>
           </p>
           <button class="button button--contacts" type="button" aria-label="кнопка напишите нам">Напишите нам</button>
         </div>
@@ -369,7 +355,7 @@
         <label for="textarea" class="feedback__textarea">Текст письма:
           <textarea id="textarea" name="textarea" placeholder="В свободной форме"></textarea>
         </label>
-        <button class="button button--feedback" type="submit" aria-label="кнопка отправить">ОТПРАВИТЬ</button>
+        <button class="button button--feedback" type="submit">ОТПРАВИТЬ</button>
         <button class="popup__close" type="button" aria-label="кнопка закрыть"></button>
       </form>
     </div>
