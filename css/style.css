@@ -1149,9 +1149,9 @@ img {
 .pages__button:hover[href] {
 
   background: var(--focus-grey);
-  -webkit-transition: 0.25 ease-in-out;
-  -o-transition: 0.25 ease-in-out;
-  transition: 0.25 ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 
 }
 
@@ -1160,9 +1160,9 @@ img {
   background: var(--active-grey);
   -webkit-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  -webkit-transition: 0.25 ease-in-out;
-  -o-transition: 0.25 ease-in-out;
-  transition: 0.25 ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 
 }
 
@@ -2042,6 +2042,7 @@ img {
 }
 
 .sort-button__down::before {
+
   content:"";
   position: absolute;
   display: block;
