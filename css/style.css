@@ -554,19 +554,6 @@ img {
   margin-bottom: 82px;
   background-color: var(--basic-white);
 
-
-}
-
-.offers__item--applications img {
-
-  background: var(--basic-green);
-
-}
-
-.offers__item--presentations img {
-
-  background: var(--basic-yellow);
-
 }
 
 .offers__list {
